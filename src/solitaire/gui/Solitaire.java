@@ -12,6 +12,7 @@ public class Solitaire extends Application{
 	private static final String  TITLE = "Solitaire";
 	private static final String VERSION = "2.0";
 	private DeckView deckView = new DeckView();
+	private WasteView wasteView = new WasteView();
 
 	public static void main(String[] args) {
 		launch(args);
@@ -25,6 +26,7 @@ public class Solitaire extends Application{
 		root.setStyle("-fx-background-color: green;");
 		
 		root.add(deckView, 0, 0);
+		root.add(wasteView, 1, 0);
 		
 		primaryStage.setResizable(false);
 		primaryStage.setScene(new Scene(root, WIDTH, HEIGHT));
